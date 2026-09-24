@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-24 · AI 每日前沿</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="container">
+    <h1><a href="../index.html" style="color:#fff;text-decoration:none;">AI 每日前沿</a></h1>
+    <p class="sub">每日一篇：新模型发布 · 模型省钱指南 · GitHub / AI 热门项目</p>
+  </div>
+</header>
+
+<main class="container article">
+  <a href="../index.html" style="font-size:13px;color:#2563eb;text-decoration:none;">← 返回首页</a>
+  <h1>2026-09-24 · 每日 AI 前沿</h1>
+  <p class="meta">生成时间：2026-09-24 · 资讯整理自公开网络</p>
+
+  <!-- 一、新模型 -->
+  <section class="block">
+    <h2><span class="badge model">新模型</span> 今天有哪些新模型（大小都算）</h2>
+
+    <div class="item">
+      <h3><a href="http://m.toutiao.com/group/7688556976938238491/" target="_blank">OpenAI 补齐 GPT-6 矩阵：GPT-6 Sol + 轻量化 GPT-6 Luna</a></h3>
+      <span class="src">来源：今日头条 · 2026-09-23</span>
+      <p>OpenAI 一次性推出 GPT-6 Sol（复杂科研推理旗舰）与轻量化 GPT-6 Luna（低成本日常调用）。定价重磅：<b>Sol 百万 token 输入仅 $2 / 输出 $10；Luna 输入低至 $0.1 / 输出 $0.5</b>，整体 API 价格相比上代直接腰斩。</p>
+      <span class="tag">旗舰</span><span class="tag">轻量化</span><span class="tag">降价</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="http://m.toutiao.com/group/7688556976938238491/" target="_blank">Anthropic 官宣 Claude Opus 5.5 上线</a></h3>
+      <span class="src">来源：今日头条 · 2026-09-23</span>
+      <p>长文本理解、复杂逻辑推理升级，<b>同等业务任务下调用成本下降 40%</b>。与 OpenAI 同日更新，海外头部厂商掀起新一轮价格战。</p>
+      <span class="tag">推理</span><span class="tag">成本下降</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://hub.baai.ac.cn/?tag_id=1026" target="_blank">Grok 4.7 上线，马斯克称"全球第三"</a></h3>
+      <span class="src">来源：智源社区 · 2026-09-23</span>
+      <p>SpaceXAI 发布主力模型 Grok 4.7，主打"同价同速、性能更强"，为编程及知识型工作优化，定位"史上最强 Grok"，强调高速度、低成本。</p>
+      <span class="tag">编程</span><span class="tag">高性价比</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://theaibench.ai/changes/" target="_blank">DeepSeek-V4.1-Flash：552B 参数 / 8B 激活，MIT 开源</a></h3>
+      <span class="src">来源：The AI Bench · 2026-09-10</span>
+      <p>DeepSeek 于 9 月 10 日发布 V4.1-Flash：552B 骨干 / 8B 输入激活、16B 输出激活，原生图像输入，1M token 上下文，MIT 开源并在 Hugging Face 上线，是同期下载量最高的新模型，API 端同时降价并退役 V4-Flash。</p>
+      <span class="tag">开源</span><span class="tag">MoE</span><span class="tag">1M上下文</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://theaibench.ai/changes/" target="_blank">MiniCPM5-2B：2.5B 端侧小模型，Apache 2.0</a></h3>
+      <span class="src">来源：The AI Bench · 2026-09-06</span>
+      <p>OpenBMB 推出 MiniCPM5-2B（2.5B 参数，1.98B 不含 embedding），131K 上下文，支持中英文，官方同步放出 GGUF，适合端侧/消费级硬件。</p>
+      <span class="tag">端侧</span><span class="tag">小模型</span><span class="tag">Apache2.0</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://finance.sina.com.cn/stock/estate/integration/2026-09-01/doc-iniqhwne3794196.shtml.md" target="_blank">腾讯混元 Hy4 preview 轻量版：权重 1.5TB → 约 214GB</a></h3>
+      <span class="src">来源：观点地产网（新浪转载） · 2026-09-01</span>
+      <p>轻量版将权重从 1.5TB 压缩到约 214GB，长文理解几乎与原始持平，显著降低显存与存储要求，更利于企业端低成本私有化部署。</p>
+      <span class="tag">轻量化</span><span class="tag">私有化部署</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://finance.sina.com.cn/jjxw/2026-08-31/doc-iniqepez9146463.shtml.md" target="_blank">科大讯飞开源星火 X2.5 端侧模型（4B / 1.7B）</a></h3>
+      <span class="src">来源：证券时报 e 公司 · 2026-08-31</span>
+      <p>9 月 1 日开源星火 X2.5-4B 与 1.7B 两款端侧模型，原生支持最长 1M token 上下文，面向车载、智能硬件、物联网等端侧场景；9 月 7 日另发布星火 X2.5（293B）基座。</p>
+      <span class="tag">端侧</span><span class="tag">开源</span><span class="tag">1M上下文</span>
+    </div>
+  </section>
+
+  <!-- 二、省钱指南 -->
+  <section class="block">
+    <h2><span class="badge save">省钱</span> 模型怎么用更便宜</h2>
+
+    <div class="item">
+      <h3>价格战已开打：OpenAI / Anthropic 同日降价</h3>
+      <span class="src">来源：今日头条 · 2026-09-23</span>
+      <p><b>GPT-6 Luna 百万 token 输入仅 $0.1、输出 $0.5</b>；Claude Opus 5.5 同等任务成本下降 40%。批量/低频任务可优先考虑轻量模型。</p>
+    </div>
+
+    <div class="item">
+      <h3>免费 API 额度速查（长期有效部分）</h3>
+      <span class="src">来源：腾讯云开发者社区 · 2026</span>
+      <ul class="tips">
+        <li><b>智谱 AI</b>：新用户 2000 万 Tokens（GLM 系列）</li>
+        <li><b>硅基流动</b>：新用户 2000 万 Tokens（DeepSeek、Llama 等开源模型）</li>
+        <li><b>DeepSeek 开放平台</b>：注册送 500 万 Token</li>
+        <li><b>通义千问</b>：免费层每月 100 万 Token（Qwen-Turbo）</li>
+        <li><b>Kimi</b>：新用户 15 元代金券</li>
+        <li><b>Cloudflare Workers AI</b>：每天约 1 万次免费推理（开源小模型）</li>
+        <li><b>NVIDIA NIM</b>：无限次调用（限 40 RPM），覆盖 Kimi、MiniMax、GLM 等</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <h3>预算有限的编程/高频调用，优先这类低价模型</h3>
+      <span class="src">来源：lukestahl.io 模型指南 · 2026-09</span>
+      <ul class="tips">
+        <li><b>MiniMax M3</b>：$0.15 / 百万输入，$1.15 输出，1M 上下文，最便宜的 frontier 级编程模型之一</li>
+        <li><b>Kimi K2.6</b>：$0.60 输入 / $2.50 输出，开源可自托管</li>
+        <li><b>DeepSeek Flash</b>：$0.13 输入 / $0.52 输出，性价比高</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <h3>阿里云百炼省钱顺序：免费额度 → 资源包 → 节省计划（最高 5.3 折）</h3>
+      <span class="src">来源：阿里云帮助中心 · 2026-09-22</span>
+      <p>抵扣顺序：免费额度 &gt; 资源包 &gt; AI 通用型节省计划 &gt; 按量付费。长期稳定用量可购买节省计划（承诺 3/6/12/24 个月，最高 5.3 折）。新人免费额度 90 天有效，可用"用完即停"防意外扣费。</p>
+    </div>
+
+    <div class="item">
+      <h3>本地部署省钱：跑开源小模型 / MoE 免 GPU</h3>
+      <span class="src">来源：The AI Bench · 公开资讯</span>
+      <ul class="tips">
+        <li>端侧小模型（MiniCPM5-2B、混元轻量版 214GB）降低显存/存储要求，可低成本私有化部署</li>
+        <li><b>JustVugg/colibri</b>：纯 C 编写的 MoE 推理引擎，可在普通硬件（如 16GB RAM 笔记本）上运行大模型，无需昂贵 GPU</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <h3>快到期限免（9 月 30 日前，别错过）</h3>
+      <span class="src">来源：什么值得买社区 · 2026-09-24</span>
+      <ul class="tips">
+        <li>豆包工作限免（全用户 30 天试用）</li>
+        <li>文心一言 4.0 全系列：9 月整月免费</li>
+        <li>阿里 Qoder × Qwen3.8-Flash：免费调用，每天登录送 100 Credits（至 9/30）</li>
+        <li>腾讯混元 Hy3 / WorkBuddy 教师版：限免至 9/30</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 三、GitHub 热门 -->
+  <section class="block">
+    <h2><span class="badge repo">GitHub</span> GitHub 与 AI 热门项目</h2>
+
+    <div class="item">
+      <h3><a href="https://blog.csdn.net/2401_83830408/article/details/163943079" target="_blank">diagram-design：让 Agent 生成能直接用的技术图</a></h3>
+      <span class="src">来源：CSDN 周榜盘点 · 2026-08-21</span>
+      <p>给 Claude Code、Codex、Pi 用的画图 Skill，内置 38 种图形样式（架构图、流程图、时序图、状态机、ER 图、甘特图），输出 HTML/SVG 可直接打开。本周新增约 1.1 万星，已超 2.4 万星。</p>
+      <span class="tag">Agent Skill</span><span class="tag">本周大涨</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://blog.csdn.net/2401_83830408/article/details/163943079" target="_blank">OpenViking（火山引擎）：AI Agent 的 Context Database</a></h3>
+      <span class="src">来源：CSDN 周榜盘点 · 2026-08-21</span>
+      <p>把 Agent 的记忆、RAG 知识库、Skill 放到一起的统一上下文数据库，3.1 万+ 星，适合长期运行、需要持续记忆的 Agent。</p>
+      <span class="tag">Agent</span><span class="tag">上下文</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://dev.to/muildev/github-trending-digest-2026-09-01-4pik" target="_blank">deepseek-ai/deepseek-harness：Everything is a Plugin</a></h3>
+      <span class="src">来源：DEV Community · 2026-09</span>
+      <p>DeepSeek 开源的模块化 AI pipeline 框架，推理策略、外部工具、输出格式都可按插件替换，方便搭建 RAG / Agent 系统。TypeScript，约 20 万星。</p>
+      <span class="tag">DeepSeek</span><span class="tag">插件化</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://dev.to/muildev/github-trending-digest-2026-09-01-4pik" target="_blank">DietrichGebert/ponytail：最懒的资深开发</a></h3>
+      <span class="src">来源：DEV Community · 2026-09</span>
+      <p>让 AI agent 奉行"最好的代码是从不写的代码"，主动复用、拒绝过度工程。约 11 万星，反映社区对 AI over-engineering 的反感。</p>
+      <span class="tag">AI agent</span><span class="tag">极简</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://dev.to/muildev/github-trending-digest-2026-09-01-4pik" target="_blank">JustVugg/colibri：在本地硬件跑前沿 MoE 模型</a></h3>
+      <span class="src">来源：DEV Community · 2026-09</span>
+      <p>纯 C 无依赖的极轻量推理引擎，采用 expert-streaming 按需从磁盘加载专家，可在 16GB 内存笔记本上运行 MoE 大模型（Llama/Qwen 级），无需昂贵 GPU。</p>
+      <span class="tag">本地推理</span><span class="tag">省钱</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://heatdrop.ai/" target="_blank">zai-org/ZCode：智谱开源完整 IDE 环境</a></h3>
+      <span class="src">来源：Heatdrop · 2026-09-23</span>
+      <p>智谱（Z.ai）开源了桌面、Web、终端三端完整环境，主张 GLM-5.3 的价值在"围绕模型的上层闭环"而非仅权重。近期热度 +271%。</p>
+      <span class="tag">智谱</span><span class="tag">IDE</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://heatdrop.ai/" target="_blank">trycua/cua：AI Agent 的 VM 基础设施层</a></h3>
+      <span class="src">来源：Heatdrop · 2026-09-21</span>
+      <p>开源栈提供虚拟机、驱动与基准测试，让自主 Agent 安全地与桌面操作系统交互，构建者无需自己"重新发明电脑"。</p>
+      <span class="tag">Agent</span><span class="tag">VM</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://www.ngjoo.com/trending/" target="_blank">rtk-ai/rtk：Rust 写的省钱 CLI 代理</a></h3>
+      <span class="src">来源：NGJOO 热度榜 · 2026-09</span>
+      <p>CLI 代理，通过缓存/压缩把常见开发命令的 LLM token 消耗降低 60–90%。约 8.1 万星，是"少花钱"的实用派代表。</p>
+      <span class="tag">省钱</span><span class="tag">Rust</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://ai-tldr.dev/releases/repo/" target="_blank">vLLM v0.30.0：GPU 权重缓存，重启免重载</a></h3>
+      <span class="src">来源：AI/TLDR · 2026-09-22</span>
+      <p>Fast Start 让后量化权重常驻 GPU 内存，引擎重启时直接映射而非重新加载，显著缩短自托管推理的启动时间。</p>
+      <span class="tag">推理引擎</span><span class="tag">vLLM</span>
+    </div>
+  </section>
+
+  <p style="font-size:12px;color:#6b7280;margin-top:26px;">说明：内容基于公开网络资讯整理，仅作信息汇总，不构成任何使用建议；价格与额度以各厂商官方实时页面为准。</p>
+</main>
+
+<footer class="container">
+  <p>由豆包定时任务自动生成 · 内容基于公开网络资讯整理，仅供学习参考</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日前沿 · Daily AI Frontier</title>
+<meta name="description" content="每日更新：新发布的 AI 模型、模型省钱用法、GitHub 与 AI 热门开源项目。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="container">
+    <h1>AI 每日前沿</h1>
+    <p class="sub">每天一篇：新模型发布 · 模型省钱指南 · GitHub / AI 热门项目</p>
+    <nav class="cats">
+      <a href="#new">新模型</a>
+      <a href="#save">省钱指南</a>
+      <a href="#repo">GitHub 热门</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h2>最新日报</h2>
+    <p class="date" id="latest-date"></p>
+    <p class="desc" id="latest-desc">每日更新当日 AI 模型与开发者资讯，涵盖新发布的大/小模型、如何更便宜地调用模型，以及 GitHub 上正在火的 AI 开源项目。</p>
+    <a class="more" id="latest-link" href="#">查看今天的完整日报 →</a>
+  </section>
+
+  <section class="card">
+    <h2>全部日报</h2>
+    <div id="daily-list"></div>
+  </section>
+</main>
+
+<footer class="container">
+  <p>由豆包定时任务自动生成 · 内容基于公开网络资讯整理，仅供学习参考 · 数据截至当天</p>
+</footer>
+
+<script>
+// 日报归档列表（每次新增日报时，在数组最前面插入新条目）
+var DAILY_LIST = [
+  { date: "2026-09-24", title: "GPT-6 Sol/Luna 降价腰斩 · Claude Opus 5.5 · 免费 API 额度速查", file: "daily/2026-09-24.html" }
+];
+
+(function(){
+  var list = document.getElementById("daily-list");
+  DAILY_LIST.forEach(function(it){
+    var a = document.createElement("a");
+    a.className = "daily-link";
+    a.href = it.file;
+    var d = document.createElement("span");
+    d.className = "d";
+    d.textContent = it.date;
+    var t = document.createElement("span");
+    t.className = "t";
+    t.textContent = it.title;
+    a.appendChild(d);
+    a.appendChild(t);
+    list.appendChild(a);
+  });
+  var latest = DAILY_LIST[0];
+  if (latest) {
+    document.getElementById("latest-date").textContent = latest.date;
+    document.getElementById("latest-desc").textContent = "今日日报：" + latest.title;
+    document.getElementById("latest-link").href = latest.file;
+    document.getElementById("latest-link").textContent = "查看 " + latest.date + " 的完整日报 →";
+  }
+})();
+</script>
+</body>
+</html>
