@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-10-11 · AI 每日前沿</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="container">
+    <h1><a href="../index.html" style="color:#fff;text-decoration:none;">AI 每日前沿</a></h1>
+    <p class="sub">每日一篇：新模型发布 · 模型省钱指南 · GitHub / AI 热门项目</p>
+  </div>
+</header>
+
+<main class="container article">
+  <a href="../index.html" style="font-size:13px;color:#2563eb;text-decoration:none;">← 返回首页</a>
+  <h1>2026-10-11 · 每日 AI 前沿</h1>
+  <p class="meta">生成时间：2026-10-11 · 资讯整理自公开网络</p>
+
+  <!-- 一、新模型 -->
+  <section class="block">
+    <h2><span class="badge model">新模型</span> 最近有哪些新模型（大小都算）</h2>
+
+    <div class="item">
+      <h3><a href="https://www.oschina.net/news/502831/openai-gpt-6-1-sol" target="_blank">GPT-6.1 Sol 上线 Ultrafast 极速模式：推理速度最高 8 倍</a></h3>
+      <span class="src">来源：OSCHINA / OpenAI Developer Community · 2026-10-08</span>
+      <p>OpenAI 为 GPT-6.1 Sol 推出 Ultrafast 极速模式，实测输出速度从标准版约 42 tok/s 提升到 304 tok/s（约 7 倍），首字响应从 7.1 秒压缩到 2.9 秒；在 API、Codex、ChatGPT Work 三端同步上线，价格为标准档的 6 倍。适合实时语音、客服、开发智能体等低延迟场景。</p>
+      <span class="tag">旗舰</span><span class="tag">极速推理</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/" target="_blank">JetBrains Mellum 2.1：专为编码 Agent 优化的 12B 开源 MoE</a></h3>
+      <span class="src">来源：JetBrains Blog · 2026-10-08</span>
+      <p>Mellum 2.1 是 6 月开源的 Mellum2 的升级版：仍是 12B MoE、仅 2.5B 激活参数、Apache 2.0 许可，架构不变，重点优化编码 Agent 场景的工具调用、上下文管理与代码生成工作流，主打低延迟、高吞吐、低成本。</p>
+      <span class="tag">编码模型</span><span class="tag">开源</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://segmentfault.com/feeds/blog/airenaodexiangyan" target="_blank">阶跃星辰 Step 5 Preview：600B 开源 Agent 模型，权重 10 月 15 日开放</a></h3>
+      <span class="src">来源：SegmentFault · 2026-09-20 发布 / 10-15 权重开源</span>
+      <p>600B 总参数、27B 激活，支持 100 万 Token 上下文与文本+视觉原生输入，面向 AI 编程、软件工程、金融等真实 Agentic 任务；Artificial Analysis Intelligence Index 44 分跻身全球开源模型前三（与 2.8 万亿参数的 Kimi K3 持平），单任务成本据称仅为 Opus 5 的八分之一。API 已全量开放，完整权重定于 10 月 15 日开源。</p>
+      <span class="tag">开源</span><span class="tag">Agent</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://www.iesdouyin.com/share/video/7694836403205679601" target="_blank">Reflection AI 开放 Beam：501B MoE 代码与 Agent 模型</a></h3>
+      <span class="src">来源：智源社区 / 抖音科技 · 2026-10</span>
+      <p>前 DeepMind 团队创立的 Reflection AI（获英伟达投资）推出首款开放权重模型 Beam：总参数 501B、采用 MoE 稀疏专家架构，每次推理仅激活约 2 成参数，定位代码生成与 AI 智能体任务。</p>
+      <span class="tag">开放权重</span><span class="tag">MoE</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://www.nocode.mba/ai-release-tracker/2026/10" target="_blank">Liquid AI 发布 D1-3B 与 D1-Omni-600M 开放权重决策模型</a></h3>
+      <span class="src">来源：No Code MBA · 2026-10-07</span>
+      <p>Liquid AI 放出两个开放权重"决策模型"（decision models）：D1-3B 与 D1-Omni-600M，主打轻量、低延迟的本地决策与推理场景，适合路由、分类、判断类工作负载。</p>
+      <span class="tag">轻量</span><span class="tag">开放权重</span>
+    </div>
+  </section>
+
+  <!-- 二、省钱指南 -->
+  <section class="block">
+    <h2><span class="badge save">省钱</span> 模型怎么用更便宜</h2>
+
+    <div class="item">
+      <h3>OpenAI 下调 GPT-6 API 价格 50%：Sol $2/$10，Luna $0.10</h3>
+      <span class="src">来源：Tech Insider · 2026-10-08</span>
+      <p>GPT-6 Sol 旗舰档从 $4/$20 降到 $2/$10（每百万 Token 输入/输出），降幅 50%；面向免费用户的 GPT-6 Luna 低至 $0.10 输入，配合智能 UI 能力扩展使用场景。</p>
+    </div>
+
+    <div class="item">
+      <h3>价格战开打：Claude Haiku 5.5 与 GPT-6 Luna 同价 $0.1</h3>
+      <span class="src">来源：新浪财经（今日头条） · 2026-10-10</span>
+      <p>Claude 把 Haiku 5.5 压到地板价（百万输入 $0.1、降价 90%），OpenAI 直接把 GPT-6 Luna 免费开放给所有用户——海外两大巨头同时动手，"一家降到地板价、一家直接免费"。</p>
+    </div>
+
+    <div class="item">
+      <h3>GPT-6 全量上线：免费用户直接用旗舰 Luna</h3>
+      <span class="src">来源：新浪财经（今日头条） · 2026-10-10</span>
+      <p>ChatGPT 免费用户已能用上 GPT-6 Luna，日常问答、写作、分析基本零成本；需要更高算力与智能 UI 的付费用户可选 GPT-6 Sol。</p>
+    </div>
+
+    <div class="item">
+      <h3>阿里云"AI 焕新季"：通用节省计划低至 4.5 折，覆盖 150+ 模型</h3>
+      <span class="src">来源：阿里云 · 2026-10</span>
+      <p>支持抵扣 Qwen3.8、Wan3.0 等 150+ 款模型，新购低至 4.5 折；另有 Token Plan 订阅、场景套餐、按量付费多种形态可选，适合批量跑任务的开发者。</p>
+    </div>
+
+    <div class="item">
+      <h3>腾讯云 TokenHub 十月积分价：多模型优惠至 10 月 30 日</h3>
+      <span class="src">来源：腾讯云 · 2026-10-01</span>
+      <p>10 月 1 日–30 日活动期间，通用 Token Plan / Hy Token Plan 内多款模型按活动积分价计费，适合已有腾讯云账号、需要多模型切换的团队。</p>
+    </div>
+
+    <div class="item">
+      <h3>免费额度备忘：阿里云百炼新用户各模型独立 100 万 Token</h3>
+      <span class="src">来源：AI 优惠聚合器 · 2026-10-07</span>
+      <p>新用户开通百炼后每款模型各有约 100 万 Token 免费额度（不可跨模型合并，仅北京地域生效，过期不补发）；配合 Groq、Ollama Cloud 免费档、OpenCode 永久免费额度，白嫖组合依然在窗口期。</p>
+    </div>
+  </section>
+
+  <!-- 三、GitHub 热门 -->
+  <section class="block">
+    <h2><span class="badge repo">GitHub</span> GitHub 与 AI 热门项目</h2>
+
+    <div class="item">
+      <h3><a href="https://36kr.com/p/4019721614169733" target="_blank">morluto/rea：一夜 1.4 万星，用 Agent "逆向分析一切"</a></h3>
+      <span class="src">来源：GitHub 热榜 / 36氪 · 2026-10-10</span>
+      <p>REA（Reverse Engineer Anything）可用 Agent 从应用行为逆向到原生二进制，微信、支付宝、抖音等国民 App 都被拿来演示。单日新增约 1.4 万星，总星数已达 4.5 万，热度直追年初的 OpenClaw。</p>
+      <span class="tag">今日热榜第一</span><span class="tag">逆向</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">mattpocock/skills：282.6k 星，"真实工程师的 Skills"</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-10</span>
+      <p>作者把个人 .agents 目录里的工程级 Skills 开源（Shell 实现），单日新增 2.37 万星、总星 28.3 万，是当前 Agent Skills 生态最火的仓库之一。</p>
+      <span class="tag">Agent Skills</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">addyosmani/agent-skills：104k 星的生产级工程 Skills</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-10</span>
+      <p>为 AI 编码 Agent 准备的生产级工程技能集（JavaScript），覆盖测试、重构、性能等场景，是浏览器团队工程师开源的质量标杆。</p>
+      <span class="tag">Agent Skills</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">alibaba/open-code-review：阿里开源的混合架构代码审查工具</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-10</span>
+      <p>确定性流水线 + LLM Agent 混合架构：精确到行的评审意见、内置多语言规则集（NPE、线程安全、XSS、SQL 注入），兼容 OpenAI 与 Anthropic API，45.2k 星。</p>
+      <span class="tag">代码审查</span><span class="tag">安全</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">BerriAI/litellm：60.6k 星的轻量 AI 网关</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-10</span>
+      <p>Rust 核心 + Python SDK，一个 OpenAI 兼容入口调用 100+ LLM API（Bedrock、Azure、OpenAI、Anthropic、VertexAI、vLLM、NVIDIA NIM 等），内置成本追踪、负载均衡与日志，是省钱 + 省事的网关首选。</p>
+      <span class="tag">API 网关</span><span class="tag">省钱</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://dailytrendsignal.com/daily/daily-trend-signal-2026-10-10/" target="_blank">Cloudflare 收购 Deno：开源运行时生态洗牌</a></h3>
+      <span class="src">来源：Daily Trend Signal · 2026-10-10</span>
+      <p>Cloudflare 宣布收购 Deno（Deno/Deno Deploy 团队），将深度整合其边缘运行时能力；同周 Ollama 星数达 182.6k，开源 AI 基础设施持续升温。</p>
+      <span class="tag">行业大新闻</span><span class="tag">边缘计算</span>
+    </div>
+  </section>
+
+  <p style="font-size:12px;color:#6b7280;margin-top:26px;">说明：内容基于公开网络资讯整理，仅作信息汇总，不构成任何使用建议；价格与额度以各厂商官方实时页面为准。</p>
+</main>
+
+<footer class="container">
+  <p>由豆包定时任务自动生成 · 内容基于公开网络资讯整理，仅供学习参考</p>
+</footer>
+</body>
+</html>
