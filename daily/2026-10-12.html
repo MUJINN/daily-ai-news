@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-10-12 · AI 每日前沿</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="container">
+    <h1><a href="../index.html" style="color:#fff;text-decoration:none;">AI 每日前沿</a></h1>
+    <p class="sub">每日一篇：新模型发布 · 模型省钱指南 · GitHub / AI 热门项目</p>
+  </div>
+</header>
+
+<main class="container article">
+  <a href="../index.html" style="font-size:13px;color:#2563eb;text-decoration:none;">← 返回首页</a>
+  <h1>2026-10-12 · 每日 AI 前沿</h1>
+  <p class="meta">生成时间：2026-10-12 · 资讯整理自公开网络</p>
+
+  <!-- 一、新模型 -->
+  <section class="block">
+    <h2><span class="badge model">新模型</span> 最近有哪些新模型（大小都算）</h2>
+
+    <div class="item">
+      <h3><a href="https://m.jiemian.com/article/15177058.html" target="_blank">Qwen-Image-2.1 Pro / Turbo API 上线千问平台，Turbo 权重开源</a></h3>
+      <span class="src">来源：界面新闻 / 微博 · 2026-10-11</span>
+      <p>10 月 11 日千问 AI 平台宣布 Qwen-Image-2.1 Pro 和 Turbo 的 API 正式上线，开发者可通过 API 直接接入图像生成与编辑能力，围绕设计、电商、内容创作搭建工作流；同时 Qwen-Image-2.1-Turbo 开放模型权重（7B 架构、8 步去噪、缓存文字与参考图上下文，推理更省）。</p>
+      <span class="tag">图像生成</span><span class="tag">开源</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://deepmind.google/models/gemma/gemma-4/" target="_blank">Google DeepMind 发布 Gemma 4 全家族：端侧到 PC 全覆盖</a></h3>
+      <span class="src">来源：Google DeepMind · 2026-10-10</span>
+      <p>Gemma 4 基于 Gemini 3 技术打造，"每参数智能"最强的开源家族：E2B / E4B 面向移动与物联网端侧，12B / 26B / 31B 面向个人电脑（前沿智能跑在本地），延续 Apache 2.0 开放许可。</p>
+      <span class="tag">开源</span><span class="tag">端侧</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://aitooltier.com/alternatives/nemotron" target="_blank">美团开源 LongCat-2.0：1.6T 参数 MoE，即 OpenRouter 榜首 "Owl Alpha"</a></h3>
+      <span class="src">来源：AIToolTier · 2026-10-11</span>
+      <p>美团开源 1.6T 参数 MoE（约 48B 激活）、原生 1M 上下文、MIT 许可；全栈在国产 AI 芯片上训练，被证实就是长期霸榜 OpenRouter 的匿名模型 "Owl Alpha"。</p>
+      <span class="tag">超大模型</span><span class="tag">国产算力</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://hokai.io/hub/models/diffusiongemma-26b-a4b" target="_blank">DiffusionGemma 26B-A4B：1100 tok/s 的开源扩散 LLM</a></h3>
+      <span class="src">来源：HokAI · 2026-10-11</span>
+      <p>Google DeepMind 的开源离散文本扩散模型：不再逐个 token 预测，而是并行去噪 256-token 块，现代 GPU 上跑出 1100+ tok/s，权重免费、可商用自托管。</p>
+      <span class="tag">扩散模型</span><span class="tag">高吞吐</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://community.modelscope.cn" target="_blank">至知创新研究院开源 IQuest-Q1：320B/15B MoE，Agent 定位</a></h3>
+      <span class="src">来源：ModelScope 魔搭社区 · 2026-09-29</span>
+      <p>定位于提升智能体能力的 320B/15B MoE 模型，NL2Repo 基准仅次于 Claude Opus 5，面向仓库级代码与 Agent 任务的开源选择。</p>
+      <span class="tag">开源</span><span class="tag">Agent</span>
+    </div>
+  </section>
+
+  <!-- 二、省钱指南 -->
+  <section class="block">
+    <h2><span class="badge save">省钱</span> 模型怎么用更便宜</h2>
+
+    <div class="item">
+      <h3>Groq 永久免费 API：注册即开通，无需信用卡</h3>
+      <span class="src">来源：iGetoken 活动速报 · 2026-10</span>
+      <p>gpt-oss-120b / gpt-oss-20b / qwen3.8-27b / allam-2-7b 聊天模型免费调用，Whisper 语音识别也免费；限流 30 RPM / 1000 RPD（每模型独立、24h 重置），实测吞吐约 480-640 tok/s。</p>
+    </div>
+
+    <div class="item">
+      <h3>DeepSeek V4-Pro 降价 75% 已转永久，中国 AI 开始算算力账</h3>
+      <span class="src">来源：钛媒体（今日头条） · 2026-10-11</span>
+      <p>今年 5 月 DeepSeek 将 V4-Pro 降价 75% 转为永久调整，各计费档位 API 价格降至原来的四分之一。钛媒体长文剖析国产大模型"便宜"背后的算力成本压力：模型变强、价格变低，但推理成本仍是行业要算的账。</p>
+    </div>
+
+    <div class="item">
+      <h3>火山方舟：豆包全系 500,000 tokens 免费推理额度（个人用户）</h3>
+      <span class="src">来源：AI 优惠聚合器 · 2026-10-07</span>
+      <p>个人用户开通火山方舟即享豆包全系模型 50 万 token 免费推理额度；豆包通用模型 pro/lite 的 4K、32K 版本另提供 10,000 RPM 并发。</p>
+    </div>
+
+    <div class="item">
+      <h3>MiniMax Coding Plan 上线：M3.1-Flash 三档月付首月 5 折（至 10-14）</h3>
+      <span class="src">来源：杰哥知识库 · 2026-10-11</span>
+      <p>Go ¥49 / Explore ¥119 / Build ¥469（月付），上线期间首月 5 折；三档均含文本模型 MiniMax-M3.1-Flash-Preview（原生多模态），适合想低成本试新模型编码的开发者。</p>
+    </div>
+
+    <div class="item">
+      <h3>免费额度备忘：OpenCode 永久 $60 + LongCat-2.5-Preview 两周免费</h3>
+      <span class="src">来源：CSDN 汇总 · 2026-10</span>
+      <p>OpenCode 内置 DeepSeek V4.1 Flash 价值 $60 永久免费用量；LongCat-2.5-Preview（1M 上下文、多模态、零数据保留）免费两周（9 月 26 日起）；WorkBuddy 的 DeepSeek-V4.1-Flash 免费额度也在窗口期。</p>
+    </div>
+
+    <div class="item">
+      <h3>Gemini API 免费层级保持：Flash 系列免费用</h3>
+      <span class="src">来源：Google AI · 2026-10</span>
+      <p>Gemini Developer API 免费层级持续开放，Flash 系列模型可免费用作原型与中低量级应用，付费层级按量计价。</p>
+    </div>
+  </section>
+
+  <!-- 三、GitHub 热门 -->
+  <section class="block">
+    <h2><span class="badge repo">GitHub</span> GitHub 与 AI 热门项目</h2>
+
+    <div class="item">
+      <h3><a href="http://m.toutiao.com/group/7695299637465121315/" target="_blank">morluto/rea 连续两天登顶：71.9k 星，"逆向灭霸"</a></h3>
+      <span class="src">来源：GitHub 热榜 / 36氪 · 2026-10-11</span>
+      <p>REA（Reverse Engineer Anything）以 Agent 实现"应用行为 → 原生二进制"的全程逆向，10 月 11 日单日新增 2.58 万星、总星 71.9k；比此前的 Jev 更火（REA npm 累计下载 4.4 万 vs Jev 前三日 3.5 万），被称"来势汹汹直追 OpenClaw"。</p>
+      <span class="tag">热榜第一</span><span class="tag">逆向</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">multica-ai/andrej-karpathy-skills：218k 星的 Karpathy 编码经验包</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-11</span>
+      <p>把 Andrej Karpathy 对 LLM 编码陷阱的观察浓缩成一个 CLAUDE.md，直接改善 Claude Code 行为；单文件即用，218.3k 星。</p>
+      <span class="tag">Agent Skills</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">hugohe3/ppt-master：AI 直接生成"原生" PowerPoint</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-11</span>
+      <p>把文档或主题变成真正的原生 PPT（原生形状、转场、动画、数据图表、演讲备注配音），支持自定义 .pptx 模板，59.4k 星。</p>
+      <span class="tag">PPT</span><span class="tag">Agent</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">anthropics/knowledge-work-plugins：Claude Cowork 知识工作者插件库</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-11</span>
+      <p>Anthropic 官方开源的知识工作者插件集合（Python），面向 Claude Cowork 的文档、表格、邮件等工作流，28.8k 星。</p>
+      <span class="tag">官方</span><span class="tag">知识工作</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">mksglu/context-mode：上下文窗口优化，工具输出砍掉 98%</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-11</span>
+      <p>为 AI 编码 Agent 优化上下文：沙箱化工具输出（减少 98% 占用）、持久会话记忆、跨 17 个平台通过 MCP + hooks 做路由分发，26.3k 星——典型的"省钱省上下文"实用派。</p>
+      <span class="tag">上下文优化</span><span class="tag">省钱</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">热榜其余看点：mattpocock/skills 284.5k、diagram-design 48.9k、AnyPS5</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-11</span>
+      <p>mattpocock/skills（28.5 万星，工程级 Skills）与 diagram-design（44 种图表类型，HTML+SVG 自包含）继续霸榜；boykopovar/AnyPS5 把 PS5 可执行程序自动移植到 Linux/Windows（26.8k 星）；huggingface/transformers 167.2k、pytorch 104.1k 等老牌常青。</p>
+      <span class="tag">Agent Skills</span><span class="tag">工程</span>
+    </div>
+  </section>
+
+  <p style="font-size:12px;color:#6b7280;margin-top:26px;">说明：内容基于公开网络资讯整理，仅作信息汇总，不构成任何使用建议；价格与额度以各厂商官方实时页面为准。</p>
+</main>
+
+<footer class="container">
+  <p>由豆包定时任务自动生成 · 内容基于公开网络资讯整理，仅供学习参考</p>
+</footer>
+</body>
+</html>
