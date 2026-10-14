@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-10-15 · AI 每日前沿</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="container">
+    <h1><a href="../index.html" style="color:#fff;text-decoration:none;">AI 每日前沿</a></h1>
+    <p class="sub">每日一篇：新模型发布 · 模型省钱指南 · GitHub / AI 热门项目</p>
+  </div>
+</header>
+
+<main class="container article">
+  <a href="../index.html" style="font-size:13px;color:#2563eb;text-decoration:none;">← 返回首页</a>
+  <h1>2026-10-15 · 每日 AI 前沿</h1>
+  <p class="meta">生成时间：2026-10-15 · 资讯整理自公开网络</p>
+
+  <!-- 一、新模型 -->
+  <section class="block">
+    <h2><span class="badge model">新模型</span> 最近有哪些新模型（大小都算）</h2>
+
+    <div class="item">
+      <h3><a href="https://www.marktechpost.com/" target="_blank">Cloudflare 开源 Clef-omni：30B-A3B 多模态决策模型</a></h3>
+      <span class="src">来源：MarkTechPost · 2026-10-14</span>
+      <p>Cloudflare 发布 Apache-2.0 多模态决策模型 Clef-omni，基于 Qwen3-Omni-30B-A3B：一次调用即可对文本、图像、音频、视频打分/决策，输入价格仅 $0.15/百万 token。</p>
+      <span class="tag">多模态</span><span class="tag">开源</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="http://m.toutiao.com/group/7696490207784239654/" target="_blank">本周"发布日历"本身成了新闻：Meta + 谷歌前后脚落子</a></h3>
+      <span class="src">来源：灵境数智观察（今日头条） · 2026-10-15</span>
+      <p>10 月 13 日 Meta 拿出首个前沿模型 Muse Wonder，10 月 14 日谷歌把 Gemini 4 Argon 从限量开放推到全球全面开放，两天两家前后脚；Gemini 4 Argon 最直观的提升是单次输出上限大幅提高，编程、金融、法律等领域深度工作能力突出。</p>
+      <span class="tag">前沿模型</span><span class="tag">行业观察</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://segmentfault.com/feeds/blog/airenaodexiangyan" target="_blank">阶跃 Step 5 Preview 完整权重今日（10-15）开源</a></h3>
+      <span class="src">来源：SegmentFault · 2026-10-15</span>
+      <p>600B 总参 / 27B 激活的 Step 5 Preview 今日按计划开源完整权重：此前 Artificial Analysis Intelligence Index 44 分跻身开源前三（与 2.8 万亿 Kimi K3 持平），单任务成本据称仅 Opus 5 的八分之一，API 已全量开放，现在可自行部署。</p>
+      <span class="tag">开源</span><span class="tag">Agent</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://www.aitoollab.cn/news/models/" target="_blank">DeepMind 开源 EmbeddingGemma 2：740M 统一多模态嵌入</a></h3>
+      <span class="src">来源：AI工具宝箱 · 2026-10</span>
+      <p>基于 Gemma 4、Apache 2.0 开源的 740M 模型，把文本、代码、图像、视频、音频映射到统一嵌入空间，上下文 8K（前代 4 倍）；输出向量可从 768 维截断到 128 维，端侧存储最高省 6 倍。</p>
+      <span class="tag">嵌入</span><span class="tag">端侧</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://navxd.com/navigation/models/" target="_blank">Mistral Large 4（Le Chonk）：约 1 万亿参数欧洲旗舰</a></h3>
+      <span class="src">来源：Electrosens R&D · 2026-10-10</span>
+      <p>10 月 6 日发布的 Mistral 前沿多模态 Agent 模型：约 1 万亿参数（49B 激活/回答）、1M 上下文，完全在欧洲训练，主打主权 AI 与政府客户，开放权重预计 10 月底落地。</p>
+      <span class="tag">超大模型</span><span class="tag">欧洲训练</span>
+    </div>
+  </section>
+
+  <!-- 二、省钱指南 -->
+  <section class="block">
+    <h2><span class="badge save">省钱</span> 模型怎么用更便宜</h2>
+
+    <div class="item">
+      <h3>Gemini 4 Argon 引入期定价：输入 $2 / 输出 $10，缓存输入 $0.1</h3>
+      <span class="src">来源：灵境数智观察 · 2026-10-15</span>
+      <p>谷歌为 Argon 设置引入期（至 2026-11-30）：每百万输入 $2、输出 $10、缓存输入 $0.1；引入期结束后调整为 $4/$20/$0.2——想低门槛试旗舰模型就趁现在。</p>
+    </div>
+
+    <div class="item">
+      <h3>Gemini 3.8 Flash 限时价：2026 年底前输入 $0.75 / 输出 $3.75</h3>
+      <span class="src">来源：36氪 · 2026-10-14</span>
+      <p>官方公布 2026-12-31 前标准 API 输入 $0.75、输出 $3.75（每百万 token），2027-01-01 起调整——Flash 系列当前是高性价比区间，36氪同时分析"硅谷 AI 杀疯了，DeepSeek 们的性价比还剩多少"。</p>
+    </div>
+
+    <div class="item">
+      <h3>混元 Hy4 preview 限免延期至 10-31：新用户 14 天免费、老用户夜间免费</h3>
+      <span class="src">来源：iGetoken · 2026-10</span>
+      <p>新用户（9/11 起注册或此前未体验）首次开启 Hy4 preview 起 14 天每日免费额度；老用户闲时（23:00–8:00）免费，夜间批量任务最划算。</p>
+    </div>
+
+    <div class="item">
+      <h3>火山方舟 Managed Agents 免费额度包：30 小时运行时 + 500 次搜索</h3>
+      <span class="src">来源：火山引擎文档 · 2026-09-28</span>
+      <p>首次开通 Managed Agents 即赠 30 小时 Agent 运行时 + 500 次 web_search 调用，有效期 2 年，每账号仅一次——做 Agent 原型验证零成本。</p>
+    </div>
+
+    <div class="item">
+      <h3>持续窗口：Groq 永久免费 API + Gemini API 免费层</h3>
+      <span class="src">来源：iGetoken / Google AI · 2026-10</span>
+      <p>Groq 的 gpt-oss-120b/20b、qwen3.8-27b、allam-2-7b 聊天与 Whisper 永久免费（无需信用卡）；Gemini Developer API 免费层级继续开放 Flash 系列。</p>
+    </div>
+  </section>
+
+  <!-- 三、GitHub 热门 -->
+  <section class="block">
+    <h2><span class="badge repo">GitHub</span> GitHub 与 AI 热门项目</h2>
+
+    <div class="item">
+      <h3><a href="https://m.weibo.cn/detail/5353842058725954" target="_blank">morluto/rea 破 20 万星：单日 +5.4 万，应用案例刷屏</a></h3>
+      <span class="src">来源：GitHub 热榜 / 微博 · 2026-10-14</span>
+      <p>REA 总星数达 206.3k、单日新增 5.47 万，连续五天登顶；开发者用它重写了 Photoshop 等 7 款 Adobe 工具（体积缩到几十 MB 的开源平替）、把 Switch《暗黑破坏神 2》原生移植到 iOS 跑 60 帧，还有《守望先锋 1》相关逆向成果。</p>
+      <span class="tag">热榜第一</span><span class="tag">20万星</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">debpalash/VoiceStudio：开源自托管的 ElevenLabs 替代品</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-14</span>
+      <p>语音克隆、声音设计、视频配音、听写转写、有声书创作，支持 646 种语言，全本地运行（63.2k 星，单日 +1.7k）——TTS 类需求的自托管省钱方案。</p>
+      <span class="tag">语音</span><span class="tag">本地部署</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">vercel-labs/skills：开源 Agent skills 工具（npx skills）</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-14</span>
+      <p>Vercel Labs 开源的 Agent skills 工具链，一条命令 npx skills 即可给编码 Agent 装技能（34.5k 星），是当前 "skills 生态" 的又一重量级玩家。</p>
+      <span class="tag">Agent Skills</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">xtool-org/xtool：跨平台 Xcode 替代品</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-14</span>
+      <p>在 Linux、Windows、macOS 上用 SwiftPM 构建和发布 iOS 应用，号称"跨平台 Xcode 替代"（9.3k 星，单日 +1.2k）——开发者生态新宠。</p>
+      <span class="tag">iOS 开发</span><span class="tag">跨平台</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://dailytrendsignal.com/daily/daily-trend-signal-2026-10-14/" target="_blank">周边看点：MoneyPrinterTurbo 上榜、Anthropic 开源 Source Control、ollama 183k</a></h3>
+      <span class="src">来源：Daily Trend Signal / VQV · 2026-10-14</span>
+      <p>MoneyPrinterTurbo（AI 自动生成短视频）进入当日热门；Anthropic 发布 Source Control 相关开源项目；ollama 总星 183.1k（本地跑 Kimi/GLM/DeepSeek/gpt-oss/Qwen/Gemma）；AirLLM 38.3k、context-mode 28.2k、diagram-design 54.1k 继续在榜。</p>
+      <span class="tag">短视频</span><span class="tag">本地推理</span>
+    </div>
+  </section>
+
+  <p style="font-size:12px;color:#6b7280;margin-top:26px;">说明：内容基于公开网络资讯整理，仅作信息汇总，不构成任何使用建议；价格与额度以各厂商官方实时页面为准。</p>
+</main>
+
+<footer class="container">
+  <p>由豆包定时任务自动生成 · 内容基于公开网络资讯整理，仅供学习参考</p>
+</footer>
+</body>
+</html>
