@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-10-18 · AI 每日前沿</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="container">
+    <h1><a href="../index.html" style="color:#fff;text-decoration:none;">AI 每日前沿</a></h1>
+    <p class="sub">每日一篇：新模型发布 · 模型省钱指南 · GitHub / AI 热门项目</p>
+  </div>
+</header>
+
+<main class="container article">
+  <a href="../index.html" style="font-size:13px;color:#2563eb;text-decoration:none;">← 返回首页</a>
+  <h1>2026-10-18 · 每日 AI 前沿</h1>
+  <p class="meta">生成时间：2026-10-18 · 资讯整理自公开网络</p>
+
+  <!-- 一、新模型 -->
+  <section class="block">
+    <h2><span class="badge model">新模型</span> 最近有哪些新模型（大小都算）</h2>
+
+    <div class="item">
+      <h3><a href="http://finance.sina.cn/2026-10-17/detail-inivpspz6379585.d.html" target="_blank">DeepSeek 发布 V4.1-Flash-1017："许愿式编程"成为现实</a></h3>
+      <span class="src">来源：新浪财经 / 羊城晚报 · 2026-10-17</span>
+      <p>10 月 17 日 DeepSeek 官宣 V4.1 Flash 更新至 V4.1-Flash-1017（763B 参数）：网页端、APP 与 API 已同步切换，用户无需改 API 调用即用上新模型；"许愿式"编程能力升级——用较少提示词即可从零构建完整项目；模型开源（HuggingFace/ModelScope）。</p>
+      <span class="tag">开源</span><span class="tag">许愿式编程</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-october-18-2026-reflection-opens-beam-501b-anthropic-replaces-git-tsmc-rides-4d7l" target="_blank">Reflection 开源 Beam 501B、Anthropic 开源源码控制工具</a></h3>
+      <span class="src">来源：DEV Community AI Daily Digest · 2026-10-18</span>
+      <p>今日国际动态：Reflection 开源 501B 参数模型 Beam；Anthropic 发布新的源码控制开源项目，被媒体概括为"Anthropic Replaces Git"——AI 时代的版本管理正在被重做；台积电随 AI 浪潮营收大涨（Q3 净利同比 +69%、营收 $470 亿）。</p>
+      <span class="tag">开源</span><span class="tag">501B</span><span class="tag">Agent 工程化</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://hub.baai.ac.cn/?tag_id=82" target="_blank">Agent Lightning v1.0：3500 行代码的轻量 RL 控制平面</a></h3>
+      <span class="src">来源：智源社区 · 2026-10-08</span>
+      <p>仅约 3500 行代码实现完整 RL 控制平面，原生支持 Kubernetes（自建集群/云/本地均可，不依赖商业沙箱）；仅用约 6000 个开源样本即推动 Qwen3.5-9B 在 SWE-bench Verified 的 Pass@1 从 41.8% 提升至 56.4%。</p>
+      <span class="tag">RL</span><span class="tag">轻量</span><span class="tag">开源</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://www.qishuzhi.com/llmlist" target="_blank">关注清单：Qwen3.8-27B（Apache 2.0）、小米 MiMo-V2.6-Flash</a></h3>
+      <span class="src">来源：企数智 / AIToolTier · 2026-10-17</span>
+      <p>Qwen3.8-27B 稠密模型已以 Apache 2.0 开源（可商用）；小米 MiMo-V2.6-Flash 原生全模态、309B 总参 / 15B 激活——轻量/端侧部署的候选都在陆续开源。</p>
+      <span class="tag">轻量模型</span><span class="tag">Apache 2.0</span>
+    </div>
+  </section>
+
+  <!-- 二、省钱指南 -->
+  <section class="block">
+    <h2><span class="badge save">省钱</span> 模型怎么用更便宜</h2>
+
+    <div class="item">
+      <h3>DeepSeek 开放自研 Search / Fetch API：5 元/千次，限时免费至 11 月 1 日</h3>
+      <span class="src">来源：澎湃新闻 / 钱江晚报 · 2026-10-17</span>
+      <p>V4.1-Flash-1017 发布同步开放 Search 与 Fetch 两个接口（5 元/千次成功请求）；在 DeepSeek Harness、Claude Code 或 Codex 中通过 Server 端工具调用，限时到 11 月 1 日免费——联网检索能力直接白嫖两周。</p>
+    </div>
+
+    <div class="item">
+      <h3>DeepSeek V4.1-Flash-1017：性能涨、费用降</h3>
+      <span class="src">来源：钱江晚报 · 2026-10-17</span>
+      <p>新版本各项基准大幅提升，但 API 计价不变（模型价格未涨），且用户无需修改任何调用——"加量不加价"的典型，网页端与 APP 同步切换，老 API 直接继承。</p>
+    </div>
+
+    <div class="item">
+      <h3>Anthropic 掀桌：≤10 万 token 输入 $0.10 / 输出 $0.50</h3>
+      <span class="src">来源：36氪 大模型价格战报道 · 2026-10-10</span>
+      <p>官方价目：≤10 万 token 输入 $0.10、输出 $0.50（每百万）；超过则 $0.50/$2.50；缓存读取压到 $0.01、批处理再打五折——小请求场景已经杀进"白菜价"区间。</p>
+    </div>
+
+    <div class="item">
+      <h3>持续窗口：Gemini 3.8 Flash 限时价 + 混元 Hy4 限免至 10-31</h3>
+      <span class="src">来源：36氪 / iGetoken · 2026-10</span>
+      <p>Gemini 3.8 Flash 在 2026-12-31 前输入 $0.75 / 输出 $3.75（每百万）；混元 Hy4 preview 新用户首开 14 天免费、老用户夜间（23:00–8:00）免费至 10-31；Groq 永久免费 API 持续。</p>
+    </div>
+  </section>
+
+  <!-- 三、GitHub 热门 -->
+  <section class="block">
+    <h2><span class="badge repo">GitHub</span> GitHub 与 AI 热门项目</h2>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">morluto/rea 破 26.9 万星：连霸六天，NSA 的 Ghidra 也被带火</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-16</span>
+      <p>REA 总星达 269.4k、单日 +3.2 万，连续六天登顶；AI 逆向热度外溢——美国国安局（NSA）的开源逆向框架 Ghidra（88.7k 星）也冲上热榜第三，逆向工程成了当下最火的 AI 应用方向。</p>
+      <span class="tag">热榜第一</span><span class="tag">26.9万星</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">obra/superpowers（299.9k）与 affaan-m/ECC（280.3k）：Agent 工程化双子星</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-16</span>
+      <p>superpowers 是 Agentic skills 框架 + 软件开发方法论（近 30 万星）；ECC 是 Agent harness 性能优化系统（skills/instincts/记忆/安全/研究优先），适配 Claude Code、Codex、Cursor 等——"怎么让 Agent 干好活"成为主线。</p>
+      <span class="tag">Agent 框架</span><span class="tag">Skills</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">JuliusBrussee/caveman：用"原始人话"省 65% token</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-16</span>
+      <p>112.5k 星的 viral 项目：让编码 Agent 用最简短的"原始人语言"交流，实测削减 65% token 消耗——最野的省钱技巧，一个插件的事。</p>
+      <span class="tag">省钱</span><span class="tag">Token 优化</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://github.hot/" target="_blank">K-Dense-AI/scientific-agent-skills：50.4k 星，把任意 Agent 变成"AI 科学家"</a></h3>
+      <span class="src">来源：GitHub 热榜 · 2026-10-16</span>
+      <p>177 个即用验证技能 + 100+ 科学数据库（生物/化学/医学/药物发现），兼容 Cursor、Claude Code、Codex、Pi 及开放 Agent Skills 标准，全球 25 万+ 科学家在用。</p>
+      <span class="tag">科研</span><span class="tag">Agent Skills</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://www.iesdouyin.com/share/video/7697472179534048890" target="_blank">更多看点：VoiceStudio、claude-plugins-official、XERJ、context-mode</a></h3>
+      <span class="src">来源：GitHub 热榜 / 抖音 AI 快报 · 2026-10-16/17</span>
+      <p>VoiceStudio 69.0k 星（本地语音全套，领跑当日新增）；Anthropic 官方 Claude Code 插件目录 39.1k 星；XERJ 用自动索引替代 grep（40x 省 token）；context-mode 29.8k 星（上下文窗口优化，98% 工具输出削减）；MadsLorentzen/ai-job-search（AI 求职助手）也在热度榜。</p>
+      <span class="tag">语音</span><span class="tag">插件生态</span>
+    </div>
+  </section>
+
+  <p style="font-size:12px;color:#6b7280;margin-top:26px;">说明：内容基于公开网络资讯整理，仅作信息汇总，不构成任何使用建议；价格与额度以各厂商官方实时页面为准。</p>
+</main>
+
+<footer class="container">
+  <p>由豆包定时任务自动生成 · 内容基于公开网络资讯整理，仅供学习参考</p>
+</footer>
+</body>
+</html>
