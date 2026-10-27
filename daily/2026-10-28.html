@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-10-28 · AI 每日前沿</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="container">
+    <h1><a href="../index.html" style="color:#fff;text-decoration:none;">AI 每日前沿</a></h1>
+    <p class="sub">每日一篇：新模型发布 · 模型省钱指南 · GitHub / AI 热门项目</p>
+  </div>
+</header>
+
+<main class="container article">
+  <a href="../index.html" style="font-size:13px;color:#2563eb;text-decoration:none;">← 返回首页</a>
+  <h1>2026-10-28 · 每日 AI 前沿</h1>
+  <p class="meta">生成时间：2026-10-28 · 资讯整理自公开网络</p>
+
+  <!-- 一、新模型 -->
+  <section class="block">
+    <h2><span class="badge model">新模型</span> 最近有哪些新模型（大小都算）</h2>
+
+    <div class="item">
+      <h3><a href="http://m.toutiao.com/group/7701471512540267050/" target="_blank">Google 发布 Genie 4 世界模型：可实时操控 + 实时音频</a></h3>
+      <span class="src">来源：新浪财经 · 2026-10-28</span>
+      <p>Google DeepMind 以研究预览发布世界模型 Genie 4：生成迄今最逼真、最具互动性的世界，允许用户在模拟中实时输入提示改变场景；还能生成与模拟世界匹配的实时音频，包括音乐、环境噪音和互动对话。</p>
+      <span class="tag">世界模型</span><span class="tag">Google</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="http://m.toutiao.com/group/7701251045124473407/" target="_blank">OpenAI 发布 GPT-6.1 Terra：屏幕理解 + 跨应用操作</a></h3>
+      <span class="src">来源：今日头条 · 2026-10-27</span>
+      <p>GPT-6.1 Terra 主打屏幕理解、跨应用操作和更低价格的计算机使用能力——对需要自动化工作流的 AI 工程师，可能是替代现有 RPA 方案的更智能选择；配套 Computer Use 能力同步推出。</p>
+      <span class="tag">计算机使用</span><span class="tag">OpenAI</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://ecosistemastartup.com/liquid-ai-lanza-lfm3-6-modelos-de-2b-para-ia-local/" target="_blank">Liquid AI 发布 LFM3：6 个约 2B 的开源本地模型</a></h3>
+      <span class="src">来源：El Ecosistema Startup · 2026-10-27</span>
+      <p>Liquid AI 发布新一代 Liquid Foundation Models LFM3：6 个 open-weight 约 20 亿参数模型共享同一 backbone（LFM3-1.7…），主打本地 / 端侧 IA 场景——小模型本地部署又添新选项。</p>
+      <span class="tag">开源</span><span class="tag">2B 本地模型</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://www.aitoollab.cn/news/models/" target="_blank">面壁智能 OpenBMB 发布 MathForm：端到端数学解题模型</a></h3>
+      <span class="src">来源：AI 工具宝箱 · 2026-10-27</span>
+      <p>面壁智能发布数学推理模型 MathForm：FormalVerse 含 367K+ 已验证示例，Consistency Check 达 60.32%；不依赖形式化语言，直接读取原始 LaTeX 题目，通过递归自我批判能力端到端完成解题。</p>
+      <span class="tag">数学推理</span><span class="tag">面壁智能</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="http://m.toutiao.com/group/7701140128353255999/" target="_blank">开源翻译模型 simultrain / simulinfer：单卡 RTX 4090 可跑</a></h3>
+      <span class="src">来源：爱范儿早报 · 2026-10-27</span>
+      <p>新开源翻译项目采用 Apache 2.0，公开训练/推理/演示与数据标注代码，权重同步上线 Hugging Face；支持自有视频 LoRA 微调，低显存配置（INT8 + 滑动窗口 + CPU 卸载）单张 RTX 4090 即可运行。</p>
+      <span class="tag">开源</span><span class="tag">Apache 2.0</span>
+    </div>
+  </section>
+
+  <!-- 二、省钱指南 -->
+  <section class="block">
+    <h2><span class="badge save">省钱</span> 模型怎么用更便宜</h2>
+
+    <div class="item">
+      <h3>OpenAI GPT-6.1 Terra 大降价 50%，单任务成本仅为前代三分之一</h3>
+      <span class="src">来源：今日头条 / OpenAI API · 2026-10-27</span>
+      <p>据 OpenAI 官方，GPT-6.1 Terra 的 API 定价为每百万输入 token 1 美元、每百万输出 token 5 美元，比上一代 Terra 和同代 Sol 低 50%；中等推理强度下 Agents' Last Exam 得分比 gpt-5.6 Terra 高 15 个百分点——"更便宜 + 更强"的组合。</p>
+    </div>
+
+    <div class="item">
+      <h3>火山方舟：豆包全系模型 50 万 tokens 免费推理额度</h3>
+      <span class="src">来源：AI 优惠聚合器 · 2026-10-27</span>
+      <p>火山方舟面向个人开发者提供豆包全系模型 500,000 tokens 免费推理额度；豆包通用模型 pro/lite 的 4K、32K 版本另提供 10,000 RPM、800,000 TPM 的大流量额度——做小应用起步基本免费。</p>
+    </div>
+
+    <div class="item">
+      <h3>Gemini API 输入价 $1/百万 token 限时至 11-30</h3>
+      <span class="src">来源：Google AI · 2026-10-27</span>
+      <p>Gemini Developer API 付费层级输入价格 2026-11-30 前为 1.00 美元/百万 token，12 月 1 日起上调至 2.00 美元——趁促销期可多储备用量。</p>
+    </div>
+
+    <div class="item">
+      <h3>更多可叠加免费额度：阿里云 7000 万 tokens、腾讯 TokenHub 优惠</h3>
+      <span class="src">来源：阿里云 / 腾讯云 · 2026-10</span>
+      <p>阿里云百炼新用户自动发放覆盖 70+ 主流模型的 7000 万 tokens 免费推理额度；腾讯 TokenHub Token Plan 优惠活动进行至 10-30（Hy Token Plan 积分价）。新人起步额度足够跑小项目。</p>
+    </div>
+  </section>
+
+  <!-- 三、GitHub 热门 -->
+  <section class="block">
+    <h2><span class="badge repo">GitHub</span> GitHub 与 AI 热门项目</h2>
+
+    <div class="item">
+      <h3><a href="https://www.ngjoo.com/trending/" target="_blank">morluto/rea 达 38.76 万星，继续霸榜</a></h3>
+      <span class="src">来源：NGJOO 恩筑AI · 2026-10-26</span>
+      <p>REA（Reverse Engineer Anything）总星数 387,560、单日 +6.7k，连续多日位列热榜第一；"用 Agent 逆向一切"的热度依旧在最高点。</p>
+      <span class="tag">38.7万星</span><span class="tag">热榜第一</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://ai-tldr.dev/releases/repo/" target="_blank">Google 开源 TorchTPU：PyTorch 原生 TPU 后端</a></h3>
+      <span class="src">来源：AI/TLDR · 2026-10-21</span>
+      <p>Google 四月份预告的 PyTorch-on-TPU 后端 TorchTPU 正式开源，可 pip install——GPU/TPU 双生态的 PyTorch 训练部署路径被进一步打通。</p>
+      <span class="tag">Google</span><span class="tag">TPU</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://trendshift.io/" target="_blank">Security scanner for AI agent skills 走热</a></h3>
+      <span class="src">来源：Trendshift · 2026-10-27</span>
+      <p>面向 AI agent 技能的安全扫描器上榜：检测 Claude Code、Codex 等技能中的漏洞、恶意模式、安全风险、提示注入、数据外泄与供应链风险——Agent 生态走热后的安全基建开始跟进。</p>
+      <span class="tag">安全</span><span class="tag">Agent 技能</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://stars.iblogc.com/" target="_blank">oh-my-openagent：多模型协同开源智能体框架</a></h3>
+      <span class="src">来源：GitHub Stars Index · 2026-10-24</span>
+      <p>开源智能体开发框架，支持多模型协同工作流编排，集成 Claude、GPT、Kimi、GLM、Gemini、MiniMax 等主流大模型；强调去中心化架构、反对厂商锁定，提供实时构建直播与社区协作。</p>
+      <span class="tag">智能体框架</span><span class="tag">多模型</span>
+    </div>
+
+    <div class="item">
+      <h3><a href="https://avinashsangle.com/projects/trending-scout" target="_blank">更多看点：OmniRoute 免费 AI 网关、DeepInfer 开源发酵、ai-engineering-from-scratch 74k</a></h3>
+      <span class="src">来源：Trending Scout / AI/TLDR · 2026-10</span>
+      <p>OmniRoute（免费 MIT AI gateway，一个端点聚合 290+ provider、500+ 模型）；DeepSeek DeepInfer 推理引擎开源持续发酵；rohitg00/ai-engineering-from-scratch 达 74k 星，从零学 AI 工程热度不减。</p>
+      <span class="tag">AI 网关</span><span class="tag">学习资源</span>
+    </div>
+  </section>
+
+  <p style="font-size:12px;color:#6b7280;margin-top:26px;">说明：内容基于公开网络资讯整理，仅作信息汇总，不构成任何使用建议；价格与额度以各厂商官方实时页面为准。</p>
+</main>
+
+<footer class="container">
+  <p>由豆包定时任务自动生成 · 内容基于公开网络资讯整理，仅供学习参考</p>
+</footer>
+</body>
+</html>
